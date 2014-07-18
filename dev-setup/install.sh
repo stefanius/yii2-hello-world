@@ -31,7 +31,7 @@ sudo apt-get -y install libapr1 libaprutil1 libdbd-mysql-perl libdbi-perl libnet
 
 sudo apt-get -y remove apache2
 sudo apt-get -y autoremove
-sudo mkdir /var/log/nginx/yii
+sudo mkdir /var/log/nginx/yii2-hello-world
 
 mysql -u root -ppassword -e 'show databases;'
 mysql -u root -ppassword -e "CREATE USER 'qs_dev_user'@'localhost' IDENTIFIED BY 'password';"

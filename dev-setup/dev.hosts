@@ -1,9 +1,9 @@
 server {
-    set $host_path "/www/mysite";
-    access_log  /www/mysite/log/access.log  main;
+    set $host_path "/vagrant/yii2-hello-world";
+    access_log  /var/log/nginx/yii2-hello-world/access.log  main;
 
-    server_name  mysite;
-    root   $host_path/htdocs;
+    server_name  yii2-hello-world;
+    root   $host_path;
     set $yii_bootstrap "index.php";
 
     charset utf-8;
